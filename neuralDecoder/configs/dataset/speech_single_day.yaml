@@ -1,0 +1,23 @@
+name: speech
+sessions:
+  - t5.2022.04.28
+datasetToLayerMap: [0]
+datasetProbability: [1.0]
+datasetProbabilityVal: [1.0]
+dataDir:
+  - /oak/stanford/groups/shenoy/stfan/data/t12_sess
+syntheticDataDir:
+syntheticMixingRate: 0.0
+whiteNoiseSD: 1.2
+constantOffsetSD: 0.6
+randomWalkSD: 0.02
+nInputFeatures: 256
+timWarpFactor: 0.0
+staticGainSD: 0.0
+nClasses: 39
+maxSeqElements: 500
+
+# Dataset shuffle buffer size
+bufferSize: 192
+
+copyInputLayer:

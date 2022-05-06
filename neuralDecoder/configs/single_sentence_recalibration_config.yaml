@@ -1,0 +1,40 @@
+hydra:
+  run:
+    dir: ${output_dir}
+  sweep:
+    dir: ${output_dir}
+    subdir: ${hydra.job.override_dirname}
+  job:
+    config:
+      override_dirname:
+        exclude_keys:
+          - output_dir
+          - data_dir
+          - init_model_dir
+          - init_model_ckpt_idx
+          - sessions
+
+sessions:
+  - t5.2019.11.25
+  - t5.2019.12.09
+  - t5.2019.12.11
+  - t5.2019.12.18
+  - t5.2019.12.20
+  - t5.2020.01.06
+  - t5.2020.01.08
+
+data_dir: /oak/stanford/groups/shenoy/stfan/data/handwriting_data/continual_recalibration
+
+output_dir:
+
+init_model_dir: /oak/stanford/groups/shenoy/stfan/logs/handwriting_logs/dropout_save_5000_fix_11.25/batchSize=48,batchesPerSave=5000,dataset.syntheticMixingRate=0.33,dataset=handwriting_single_day,model.dropout=0.8,seed=9156
+
+init_model_ckpt_idx: 20000
+
+batch_size: 32
+
+new_data_percent: 0.5
+
+train_steps: 100
+
+recalibration: True

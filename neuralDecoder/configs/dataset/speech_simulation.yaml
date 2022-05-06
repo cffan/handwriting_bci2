@@ -1,0 +1,20 @@
+name: speech
+sessions:
+  - '0'
+datasetToLayerMap: [0]
+datasetProbability: [1.0]
+datasetProbabilityVal: [1.0]
+dataDir: /scratch/users/stfan/SimDataset2_tfrecord
+syntheticDataDir:
+syntheticMixingRate: 0.0
+whiteNoiseSD: 1.2
+constantOffsetSD: 0.6
+randomWalkSD: 0.02
+nInputFeatures: 256
+timWarpFactor: 0.0
+staticGainSD: 0.0
+nClasses: 39
+maxSeqElements: 500
+
+# Dataset shuffle buffer size
+bufferSize: 192

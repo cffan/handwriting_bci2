@@ -1,0 +1,23 @@
+name: handwriting
+sessions:
+  - t5.2019.12.09
+datasetToLayerMap: [0]
+datasetProbability: [1]
+datasetProbabilityVal: [1.0]
+dataDir:
+  - /oak/stanford/groups/shenoy/stfan/data/handwriting_pseudo_labels/train_11.25/dropout=0.8,seed=9156/
+syntheticDataDir: /scratch/users/stfan/handwritingBCIData/RNNTrainingSteps/Step3_SyntheticSentences_tf2/HeldOutBlocks
+syntheticMixingRate: 0.0
+whiteNoiseSD: 1.2
+constantOffsetSD: 0.6
+randomWalkSD: 0.02
+nInputFeatures: 192
+timWarpFactor: 0.0
+staticGainSD: 0.0
+nClasses: 31
+maxSeqElements: 500
+
+# Dataset shuffle buffer size
+bufferSize: 192
+
+subsetSize: -1

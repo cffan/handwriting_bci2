@@ -1,0 +1,23 @@
+name: handwriting
+sessions:
+  - t5.2019.05.08
+datasetToLayerMap: [0]
+datasetProbability: [1.0]
+datasetProbabilityVal: [1.0]
+dataDir:
+  - /scratch/groups/shenoy/data/handwriting_data/normalize_with_block_means
+syntheticDataDir: /scratch/users/stfan/handwritingBCIData/RNNTrainingSteps/Step3_SyntheticSentences_tf2/HeldOutBlocks
+syntheticMixingRate: 0.0
+whiteNoiseSD: 1.2
+constantOffsetSD: 0.6
+randomWalkSD: 0.02
+nInputFeatures: 192
+timWarpFactor: 0.0
+staticGainSD: 0.0
+nClasses: 31
+maxSeqElements: 500
+
+# Dataset shuffle buffer size
+bufferSize: 192
+
+copyInputLayer:
